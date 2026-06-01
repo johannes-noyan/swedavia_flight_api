@@ -1,0 +1,7 @@
+Write-Host "========================================================================"
+Write-Host "Name:      Johannes Noyan"
+Write-Host "Email:     johannes_noyan@outlook.com"
+Write-Host "Timestamp: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+Write-Host "Hostname:  $env:COMPUTERNAME"
+Write-Host "IP:        $(Get-NetIPAddress -InterfaceAlias 'Wi-Fi' -AddressFamily IPv4 | Select-Object -ExpandProperty IPAddress)"
+Write-Host "========================================================================"
