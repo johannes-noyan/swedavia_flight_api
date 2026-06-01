@@ -1,0 +1,18 @@
+* README.md
+  * In English.
+  * Explain:
+    * What the project does.
+    * How to install dependencies.
+    * How to set the SWEDAVIA_API_KEY environment variable.
+    * How to run the application.
+    * Brief overview of the menu options.
+    * Mention destinationer.py and city_country.json and how they are used.
+
+* FÖRKLARING.md
+  * In Swedish.
+  * Explain for Swedish end users:
+    * What the application does.
+    * How to start it.
+    * How to navigate the menu.
+    * Examples of typical use (e.g. checking arrivals for ARN today, searching a flight number, etc.).
+    * Short explanation of destination statistics and how city/country mapping works.

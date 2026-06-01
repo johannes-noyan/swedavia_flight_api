@@ -1,0 +1,15 @@
+Language: Python 3.
+HTTP client: Use requests (or standard library urllib if you prefer, but requests is fine).
+
+Structure:
+* airport.py should be the main entry point with a if __name__ == "__main__": block.
+* Separate concerns: API calls, data parsing, and terminal UI should be reasonably modular.
+
+Error handling:
+* Handle network errors, timeouts, invalid API key, invalid airport codes, invalid dates, and empty results.
+* Show clear Swedish error messages to the user.
+
+Input validation:
+* Validate date format YYYY-MM-DD.
+* Accept Swedish keywords nu, idag, imorgon, igår and convert them to appropriate dates.
+* Normalize airport input (IATA vs city name) to a valid IATA code.

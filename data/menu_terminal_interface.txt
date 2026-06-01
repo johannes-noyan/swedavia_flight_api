@@ -1,0 +1,97 @@
+#################Below is how the terminal menu look###################
+
+==================================================
+Swedavia FlightInfo API v2 - Python-klient
+==================================================
+1. Ankomster (arrivals) för en flygplats & datum
+2. Avgångar (departures) för en flygplats & datum
+3. Sök specifikt flightnummer
+4. OData-forfrågan (query endpoint)
+5. HeartBeat - hälsokontroll av API
+6. Demonstrera alla endpoints automatiskt
+q. Avsluta
+===================================================
+ 
+Välj [1-6] eller q: 1
+ 
+Tillgängliga flygplatser:
+ARN - Stockholm Arlanda
+GOT - Göteborg Landvetter
+BMA - Stockholm Bromma
+MMX - Malmö
+LLA - Luleå
+UME - Umeå
+OSD - Östersund
+VBY - Visby
+RNB - Ronneby
+KRN - Kiruna
+Ange IATA-kod eller stadsnamn (t.ex. ARN eller Visby): arn
+Ange datum (YYYY-MM-DD / nu / idag / imorgon / igår): nu
+-------------------------------------------------------
+-------------------------------------------------------
+[50] + SK532 | SAS Scandinavian Airlines (SK)
+From : London LHR
+To : (ARN)
+Status : Scheduled
+Terminal : T5    Gate: N/A
+Baggage : 3
+Sched : 16:25 UTC - 17:25 CET
+Est : -
+Actual: -
+D/I : I
+-------------------------------------------------------
+- Visar 50/217 - (167 kvar)
+[Enter] nästa sida | [a] visa alla | [q] tillbaka till menyn:
+
+##################End of Terminal menu#################################
+
+#################Below is how the terminal menu look###################
+
+==================================================
+Swedavia FlightInfo API v2 - Python-klient
+==================================================
+1. Ankomster (arrivals) för en flygplats & datum
+2. Avgångar (departures) för en flygplats & datum
+3. Sök specifikt flightnummer
+4. OData-forfrågan (query endpoint)
+5. HeartBeat - hälsokontroll av API
+6. Demonstrera alla endpoints automatiskt
+q. Avsluta
+===================================================
+ 
+Välj [1-6] eller q: 2
+ 
+Tillgängliga flygplatser:
+ARN - Stockholm Arlanda
+GOT - Göteborg Landvetter
+BMA - Stockholm Bromma
+MMX - Malmö
+LLA - Luleå
+UME - Umeå
+OSD - Östersund
+VBY - Visby
+RNB - Ronneby
+KRN - Kiruna
+Ange IATA-kod eller stadsnamn (t.ex. ARN eller Visby): got
+Ange datum (YYYY-MM-DD / nu / idag / imorgon / igår): igår
+Bara kommande (ej redan avgångna)? (j/n, Enter=alla):
+ 
++ GET https://api.swedavia.se/flightinfo/v2/GOT/departures/2026-02-25
+ 
+-------------------------------------------------------
+[50] + LH819 | Lufthansa (LH)
+From : (GOT)
+To : Frankfurt
+Status : Departed
+Terminal : T1    Gate: 15
+Baggage : N/A
+Sched : 17:55 UTC → 18:55 CET
+Est : -
+Actual: 17:54 UTC → 18:54 CET
+D/I : S
+Remarks : Departed 19:04
+-------------------------------------------------------
+- Visar 50/59 - (9 kvar)
+[Enter] nästa sida | [a] visa alla | [q] tillbaka till menyn:
+
+##################End of Terminal menu#################################

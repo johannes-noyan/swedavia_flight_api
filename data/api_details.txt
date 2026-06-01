@@ -1,0 +1,39 @@
+# The 4 API Endpoints
+
+All endpoints share the same base URL and require
+an API key in every request header:
+
+Base: https://api.swedavia.se/flightinfo/v2
+Header: Ocp-Apim-Subscription-Key: <api-key>
+
+1. Arrivals
+   * Code: GET /flightinfo/v2/{airportIATA}/arrivals/{date}
+   * Returns a list of all incoming flights to a given
+     airport on a specific date. Each flight includes the
+     flight number, airline, departure city, status
+     (Scheduled, Landed, etc.), terminal, gate, baggage
+     belt, and timestamps (scheduled, estimated, and
+     actual) in UTC.
+2. Departures
+   * Code: GET /flightinfo/v2/{airportIATA}/departures/{date}
+   * Same structure as Arrivals but for outgoing flights.
+     Returns the destination city, gate, terminal and
+     departure times.
+3. Query (OData)
+   * Code: GET /flightinfo/v2/query?$filter=airport eq "ARN' and scheduled eq '20260226'
+   * A flexible search endpoint using the OData filter
+     language. You can combine filters for airport, date,
+     flight type ( A = arrival, D = departure) and
+     specific flight number. Results are paginated - the
+     API returns ~25 flights at a time plus a
+     continuationToken to fetch the next page. The
+     response format is slightly different: each flight is
+     wrapped inside {"arrival": {...}} or
+     {"departure": {...}} which the code unwraps
+     automatically.
+4. HeartBeat
+   * Code: GET /flightinfo/v2/heartBeat
+   * A simple health check. Returns 200 OK if
+     Swedavia's API is up and running. No flight data is
+     included - only used to verify the API is available
+     before making real requests.

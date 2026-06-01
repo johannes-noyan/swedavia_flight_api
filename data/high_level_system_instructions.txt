@@ -1,0 +1,7 @@
+You are an expert Python developer. Generate a complete Python terminal application that interacts with the Swedavia FlightInfo API v2. The application must behave exactly like the specification below.
+
+The application is intended for Swedish users. Hence, the interface needs to be in Swedish (all prompts, menus, labels, and messages). However, the code and comments must be in English.
+
+Use the content of the attached file destinations-statistik-2025.csv to create a local JSON file named city_country.json that maps cities to countries. This JSON file must be generated as part of the project (you can assume the CSV is available at development time). The application must then use city_country.json as a local offline database.
+
+Output the entire project as downloadable code blocks, one file per block. Each file must be in its own fenced code block with the correct filename.

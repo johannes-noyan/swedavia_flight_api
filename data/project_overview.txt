@@ -1,0 +1,46 @@
+Project name: Swedavia Flight API
+
+This project is a Python terminal application that connects to the Swedavia FlightInfo API v2 to display real-time flight data for Sweden’s 10 Swedavia airports.
+
+The project must contain at least the following files:
+* airport.py — main interactive terminal application.
+* destinationer.py — helper module for destination statistics/overview.
+* city_country.json — local offline mapping of city → country, generated from destinations-statistik-2025.csv.
+* README.md — project documentation.
+* FÖRKLARING.md — Swedish explanation/guide for end users (in Swedish).
+
+The application must:
+* Use Swedavia FlightInfo API v2.
+* Implement all 4 API endpoints (Arrivals, Departures, Query/OData, HeartBeat).
+* Provide a menu with 6 options (see exact menu text below).
+* Show only 50 flights at a time by default, with pagination and an option to show all.
+* Be robust, handle errors gracefully, and validate user input.
+
+-------------------------------------------------------------------------
+
+# Short project summary
+
+This project is a Python terminal application that
+connects to the Swedavia Flightinfo API v2 to
+display real-time flight data for Sweden's 10
+Swedavia airports.
+
+The main file airport.py provides an interactive
+menu with 6 options - view arrivals, view
+departures, search a specific flight, run OData
+queries, check API health, or run a full auto-demo.
+All 4 available API endpoints are implemented and
+covered.
+
+The helper file destinationer.py gives a
+destination overview - it fetches arrivals or
+departures and lists all unique cities along with
+their country (looked up from { } city_country.json
+) and how many flights went there. Results can be
+filtered by country or city name.
+
+The { } city_country.json file was built from
+Swedavia's official statistics Excel file and serves
+as a local offline database mapping 263 cities to 59
+countries, used entirely without any extra API calls.
+

@@ -1,0 +1,3 @@
+All code and comments must be in English. All user-facing text (terminal UI, prompts, messages) must be in Swedish. Use the content of destinations-statistik-2025.csv to create city_country.json. Output the entire project as downloadable code blocks, one file per block. Each code block must clearly specify the filename in a comment at the top or in the code fence label.
+
+Generate all necessary files (airport.py, destinationer.py, city_country.json content, any helper scripts if needed, README.md, FÖRKLARING.md) in this format.
