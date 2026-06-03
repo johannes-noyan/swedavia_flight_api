@@ -29,18 +29,22 @@ Work log:
 
 **Worked with:**
 * We continued working with "Part 2: Start of work (Implementation /
-  Execution)"
+  Execution)".
 * We began working with "Part 3: Completion of work (Finalization & i
-  mprovement)"
+  mprovement)".
+* We began working with "Part 4 - Conclusion".
 
 **What was done:**
 * I found an API Key for our app and told Gemini to insert it into the
   code.
 * We completed "Part 2: Start of work (Implementation /
-  Execution)"
+  Execution)".
 * We removed all excessive files Gemini created to "Swedavia Fli
   ght API".
 * My third "git commit -m" was done.
+* We completed "Part 3: Completion of work (Finalization & i
+  mprovement)".
+* My fourth "git commit -m" was done.
 
 **Problems and solutions:**
 * Problem 3: Swedavia website (https://apideveloper.swedavia.se/) was
@@ -52,18 +56,31 @@ Work log:
   I v2 .mov" video, Najmaddin provided to us, the API Key was
   shared. Hence, I copied it, and told Gemini to insert it into
   our code. Fortunately, the API is still valid and it worked!
+* Problem 4: Menu options not working the way they are suppose to. 
+* Solution 4: I did not try to find the solutions because we need to
+  finish off this project today.
 
 **Decisions:**
+### Open this file to start the app
+![Screenshot #1](screenshots/start_app.png)
+### First view of the app
+![Screenshot #2](screenshots/first_view.png)
+### Second view of the app
+![Screenshot #3](screenshots/second_view.png)
 
 **References:**
 * https://aistudio.google.com/
 * "Buster Swedavia FlightInfo API v2 .mov"
+* https://www.swedavia.se/
+* https://www.swedavia.se/arlanda/ankomster/
+* https://www.swedavia.se/arlanda/avgangar/
+* https://www.swedavia.se/arlanda/avgangar/#/2026-06-02
 
  ### 2026-06-02
 
 **Worked with:**
 * We began working with "Part 2: Start of work (Implementation /
-  Execution)"
+  Execution)".
 
 **What was done:**
 * I configured setup Gemini in order to prepare it, building the
@@ -77,7 +94,7 @@ Work log:
   * https://apideveloper.swedavia.se/
     "Portal is currently unavailable due to scheduled
     maintenance. The maintenance window is expected to last until
-    2026-06-03 08:00 UTC at the latest."
+    2026-06-03 08:00 UTC at the latest.".
 * Solution 1: Swedavia is saying "If you need assistance, please
   contact us at integration@swedavia.se". Hence, I will try to send
   an email to them, thinking, I may obtain a subscription key via
@@ -233,7 +250,7 @@ structures:
     
     Generate all necessary files (airport.py, destinationer.py,
     city_country.json content, any helper scripts if needed,
-    README.md, FÖRKLARING.md) in this format."
+    README.md, FÖRKLARING.md) in this format.".
 
 ### Step 3 → 5: Ends here
 
@@ -263,7 +280,7 @@ structures:
         
         Generate all necessary files (airport.py, destinationer.py,
         city_country.json content, any helper scripts if needed,
-        README.md, FÖRKLARING.md) in this format."
+        README.md, FÖRKLARING.md) in this format.".
 
 * Problem 1: To query live Swedish arrivals/departures, I need to
   create a free account in Swedavia website, to receive my
@@ -272,7 +289,7 @@ structures:
   * https://apideveloper.swedavia.se/
     "Portal is currently unavailable due to scheduled
     maintenance. The maintenance window is expected to last until
-    2026-06-03 08:00 UTC at the latest."
+    2026-06-03 08:00 UTC at the latest.".
 * Solution 1: Swedavia is saying "If you need assistance, please
   contact us at integration@swedavia.se". Hence, I will try to send
   an email to them, thinking, I may obtain a subscription key via
@@ -296,5 +313,44 @@ structures:
 * We removed all excessive files Gemini created to "Swedavia Fli
   ght API".
 
+* Problem 4: Testing the menu options.
+  * 1. Ankomster (arrivals) för en flygplats & datum
+    * "Sched : -" value is missing.
+    * "Term  : N/A" value is missing.
+    * The rest of the values are correct according to
+      https://www.swedavia.se/arlanda/ankomster/.
+  * 2. Avgångar (departures) för en flygplats & datum
+    * "From  : (N/A)"
+    * "To    : Budapest"
+    * "Status: Scheduled"
+    * "Term  : N/A       Gate: N/A" value is missing.
+    * "Sched : -" value is missing.
+    * "Actual: -" value is missing.
+    * "Remarks : " is not included in our app, but is included in
+      the original app.
+    * The rest of the values are correct according to
+      https://www.swedavia.se/arlanda/avgangar/.
+  * 3. Sök specifikt flightnummer
+    * A value from https://www.swedavia.se/arlanda/avgangar/#/
+      2026-06-02 was taken.
+    * This menu option is not working.
+  * 4. OData-förfrågan (query) eller fritext-filtrering
+    * I do not know what this menu option is, hence I did not
+      test it.
+  * 5. HeartBeat - hälsokontroll av API
+    * I tested it without API Key and with API Key.
+    * Without API Key the heartbeat say that the app is not
+      working.
+    * With API Ket the heartbeat say that the app is working.
+  * 6. Demonstrera alla endpoints automatiskt
+    * It seem to work, according to what our app say. However,
+      I did not make any further testing, other than this.
+  * q. Avsluta
+    * Yes, this closes the app.
+* Solution 4: I did not try to find the solutions because we need to
+  finish off this project today.
+
+* My fourth "git commit" was:
+  * "Complete Part 3: Completion of work (Finalization & improvement)"
 
 ## Part 4 - Conclusion
