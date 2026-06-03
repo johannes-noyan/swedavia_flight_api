@@ -24,6 +24,74 @@ Work log:
 
 **References:**
  -->
+ 
+ ### 2026-06-03
+
+**Worked with:**
+* We continued working with "Part 2: Start of work (Implementation /
+  Execution)"
+* We began working with "Part 3: Completion of work (Finalization & i
+  mprovement)"
+
+**What was done:**
+* I found an API Key for our app and told Gemini to insert it into the
+  code.
+* We completed "Part 2: Start of work (Implementation /
+  Execution)"
+* We removed all excessive files Gemini created to "Swedavia Fli
+  ght API".
+* My third "git commit -m" was done.
+
+**Problems and solutions:**
+* Problem 3: Swedavia website (https://apideveloper.swedavia.se/) was
+  not done with their maintenance at the excepted time. Neither did
+  they answer my email I sent them (it have been 1 day since I sent
+  my email to them). Hence, I need to find a different way to receive
+  an API Key.
+* Solution 3: I saw that in the "Buster Swedavia FlightInfo AP
+  I v2 .mov" video, Najmaddin provided to us, the API Key was
+  shared. Hence, I copied it, and told Gemini to insert it into
+  our code. Fortunately, the API is still valid and it worked!
+
+**Decisions:**
+
+**References:**
+* https://aistudio.google.com/
+* "Buster Swedavia FlightInfo API v2 .mov"
+
+ ### 2026-06-02
+
+**Worked with:**
+* We began working with "Part 2: Start of work (Implementation /
+  Execution)"
+
+**What was done:**
+* I configured setup Gemini in order to prepare it, building the
+  "Swedavia Flight API" to us.
+
+**Problems and solutions:** \
+* Problem 1: To query live Swedish arrivals/departures, I need to
+  create a free account in Swedavia website, to receive my
+  subscription key. However, their website is currently performing
+  an maintenance.
+  * https://apideveloper.swedavia.se/
+    "Portal is currently unavailable due to scheduled
+    maintenance. The maintenance window is expected to last until
+    2026-06-03 08:00 UTC at the latest."
+* Solution 1: Swedavia is saying "If you need assistance, please
+  contact us at integration@swedavia.se". Hence, I will try to send
+  an email to them, thinking, I may obtain a subscription key via
+  email from Swedavia.
+* Problem 2: Gemini created a terminal and web interface.
+* Solution 2: Tell Gemini to remove the web interface.
+  
+**Decisions:** \
+No Decisions.
+
+**References:**
+* https://copilot.microsoft.com/shares/Ah2r696GJRS3aBkycLMfV
+* https://aistudio.google.com/
+* "Buster Swedavia FlightInfo API v2 .mov"
 
  ### 2026-06-01
 
@@ -173,11 +241,60 @@ structures:
   * "Complete part 1: Research and planning"
 
 ## Part 2: Start of work (Implementation / Execution)
+* I configured setup Gemini in order to prepare it, building the
+  "Swedavia Flight API" to us.
+  * Details
+    * Advanced settings
+      * Select model for chat: Default (Gemini 3.5 Flash)
+      * System instructions: high_level_system_instructions.txt
+      * Framework: Next.js
+    * Output format
+      * Uploaded files: api_details.txt,
+        destinations-statistik-2025.csv, documentation_files.txt,
+        menu_terminal_interface.txt, project_overview.txt,
+        technical_requirements.txt
+      * Tell Gemini: "All code and comments must be in English. All
+        user-facing text (terminal UI, prompts, messages) must be in
+        Swedish.Use the content of destinations-statistik-2025.csv to
+        create city_country.json. Output the entire project as
+        downloadable code blocks, one file per block. Each code block
+        must clearly specify the filename in a comment at the top or
+        in the code fence label.
+        
+        Generate all necessary files (airport.py, destinationer.py,
+        city_country.json content, any helper scripts if needed,
+        README.md, FÖRKLARING.md) in this format."
 
+* Problem 1: To query live Swedish arrivals/departures, I need to
+  create a free account in Swedavia website, to receive my
+  subscription key. However, their website is currently performing
+  an maintenance.
+  * https://apideveloper.swedavia.se/
+    "Portal is currently unavailable due to scheduled
+    maintenance. The maintenance window is expected to last until
+    2026-06-03 08:00 UTC at the latest."
+* Solution 1: Swedavia is saying "If you need assistance, please
+  contact us at integration@swedavia.se". Hence, I will try to send
+  an email to them, thinking, I may obtain a subscription key via
+  email from Swedavia.
+* Problem 2: Gemini created a terminal and web interface.
+* Solution 2: Tell Gemini to remove the web interface.
+* Problem 3: Swedavia website (https://apideveloper.swedavia.se/) was
+  not done with their maintenance at the excepted time. Neither did
+  they answer my email I sent them (it have been 1 day since I sent
+  my email to them). Hence, I need to find a different way to receive
+  an API Key.
+* Solution 3: I saw that in the "Buster Swedavia FlightInfo AP
+  I v2 .mov" video, Najmaddin provided to us, the API Key was
+  shared. Hence, I copied it, and told Gemini to insert it into
+  our code. Fortunately, the API is still valid and it worked!
 
-
-
+* My third "git commit" was:
+  * "Complete Part 2: Start of work (Implementation / Execution)"
 
 ## Part 3: Completion of work (Finalization & improvement)
+* We removed all excessive files Gemini created to "Swedavia Fli
+  ght API".
+
 
 ## Part 4 - Conclusion
