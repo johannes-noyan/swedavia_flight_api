@@ -10,41 +10,93 @@
 
 ## Work log
 
-<!-- 
-Work log:
-### yyyy-mm-dd
+### 2026-06-01
 
 **Worked with:**
+* We began working with "Part 1: Research and planning".
 
 **What was done:**
+* I watched "Buster Swedavia FlightInfo API v2 .mov".
+* I read the assignment instructions of "Kopia av 4. Reverse Engineer
+  a Result (1).sh"
+* We decided to recreate "Swedavia Flight API" application with reverse
+  engineering.
+* I setup my Git respiratory and Github.
+* My first "git commit -m" was done.
+* I answered the questions from "Step 2: Ask Questions".
+* I answered the questions from "Step 3 → 5: Guess the Inputs, Guess
+  the Process, Sketch the Steps".
+* We completed "Part 1: Research and planning".
+* My second "git commit -m" was done.
 
-**Problems and solutions:**
+**Problems and solutions:** \
+No problems or solutions.
 
-**Decisions:**
+**Decisions:** \
+No Decisions.
 
 **References:**
- -->
- 
- ### 2026-06-03
+* "Buster Swedavia FlightInfo API v2 .mov"
+* "Kopia av 4. Reverse Engineer a Result (1).sh"
+* https://aistudio.google.com/
+* https://copilot.microsoft.com/shares/x3hVi3naxZPyUGsXiJrAp
+* https://copilot.microsoft.com/shares/Lgsrf8rW1gE9hazKbvsq7
+
+### 2026-06-02
 
 **Worked with:**
-* We continued working with "Part 2: Start of work (Implementation /
-  Execution)".
-* We began working with "Part 3: Completion of work (Finalization & i
+* We began working with "Part 2: Start of work (implementation/
+  execution)".
+
+**What was done:**
+* I configured setup Gemini in order to prepare it, building the
+  "Swedavia Flight API" to us.
+
+**Problems and solutions:**
+* Problem 1: To query live Swedish arrivals/departures, I need to
+  create a free account in Swedavia website, to receive my
+  subscription key. However, their website is currently performing
+  an maintenance.
+  * https://apideveloper.swedavia.se/ :
+    "Portal is currently unavailable due to scheduled
+    maintenance. The maintenance window is expected to last until
+    2026-06-03 08:00 UTC at the latest.".
+* Solution 1: Swedavia is saying "If you need assistance, please
+  contact us at integration@swedavia.se". Hence, I will try to send
+  an email to them, thinking, I may obtain a subscription key via
+  email from Swedavia.
+* Problem 2: Gemini created a terminal and web interface.
+* Solution 2: Tell Gemini to remove the web interface.
+  
+**Decisions:** \
+No Decisions.
+
+**References:**
+* https://copilot.microsoft.com/shares/Ah2r696GJRS3aBkycLMfV
+* https://aistudio.google.com/
+* "Buster Swedavia FlightInfo API v2 .mov"
+ 
+### 2026-06-03
+
+**Worked with:**
+* We continued working with "Part 2: Start of work (implementation/
+  execution)".
+* We began working with "Part 3: Completion of work (finalization & i
   mprovement)".
 * We began working with "Part 4 - Conclusion".
 
 **What was done:**
 * I found an API Key for our app and told Gemini to insert it into the
   code.
-* We completed "Part 2: Start of work (Implementation /
-  Execution)".
-* We removed all excessive files Gemini created to "Swedavia Fli
-  ght API".
+* We completed "Part 2: Start of work (implementation/
+  execution)".
+* We removed all excessive files Gemini created to
+  "Swedavia Flight API".
 * My third "git commit -m" was done.
-* We completed "Part 3: Completion of work (Finalization & i
+* We completed "Part 3: Completion of work (finalization & i
   mprovement)".
 * My fourth "git commit -m" was done.
+* My fifth "git commit -m" was done.
 
 **Problems and solutions:**
 * Problem 3: Swedavia website (https://apideveloper.swedavia.se/) was
@@ -76,71 +128,20 @@ Work log:
 * https://www.swedavia.se/arlanda/avgangar/
 * https://www.swedavia.se/arlanda/avgangar/#/2026-06-02
 
- ### 2026-06-02
+<!-- 
+Work log:
+### yyyy-mm-dd
 
 **Worked with:**
-* We began working with "Part 2: Start of work (Implementation /
-  Execution)".
 
 **What was done:**
-* I configured setup Gemini in order to prepare it, building the
-  "Swedavia Flight API" to us.
 
-**Problems and solutions:** \
-* Problem 1: To query live Swedish arrivals/departures, I need to
-  create a free account in Swedavia website, to receive my
-  subscription key. However, their website is currently performing
-  an maintenance.
-  * https://apideveloper.swedavia.se/
-    "Portal is currently unavailable due to scheduled
-    maintenance. The maintenance window is expected to last until
-    2026-06-03 08:00 UTC at the latest.".
-* Solution 1: Swedavia is saying "If you need assistance, please
-  contact us at integration@swedavia.se". Hence, I will try to send
-  an email to them, thinking, I may obtain a subscription key via
-  email from Swedavia.
-* Problem 2: Gemini created a terminal and web interface.
-* Solution 2: Tell Gemini to remove the web interface.
-  
-**Decisions:** \
-No Decisions.
+**Problems and solutions:**
+
+**Decisions:**
 
 **References:**
-* https://copilot.microsoft.com/shares/Ah2r696GJRS3aBkycLMfV
-* https://aistudio.google.com/
-* "Buster Swedavia FlightInfo API v2 .mov"
-
- ### 2026-06-01
-
-**Worked with:**
-* We began working with "Part 1: Research and planning".
-
-**What was done:**
-* I watched "Buster Swedavia FlightInfo API v2 .mov".
-* I read the assignment instructions of "Kopia av 4. Reverse Engineer
-  a Result (1).sh"
-* We decided to recreate "Swedavia Flight API" application with reverse
-  engineering.
-* I setup my Git respiratory and Github.
-* My first "git commit -m" was done.
-* I answered the questions from "Step 2: Ask Questions".
-* I answered the questions from "Step 3 → 5: Guess the Inputs, Guess
-  the Process, Sketch the Steps".
-* We completed "Part 1: Research and planning".
-* My second "git commit -m" was done.
-
-**Problems and solutions:** \
-No problems or solutions.
-
-**Decisions:** \
-No Decisions.
-
-**References:**
-* "Buster Swedavia FlightInfo API v2 .mov"
-* "Kopia av 4. Reverse Engineer a Result (1).sh"
-* https://aistudio.google.com/
-* https://copilot.microsoft.com/shares/x3hVi3naxZPyUGsXiJrAp
-* https://copilot.microsoft.com/shares/Lgsrf8rW1gE9hazKbvsq7
+ -->
 
 --
 
@@ -257,7 +258,7 @@ structures:
 * My second "git commit" was:
   * "Complete part 1: Research and planning"
 
-## Part 2: Start of work (Implementation / Execution)
+## Part 2: Start of work (implementation/execution)
 * I configured setup Gemini in order to prepare it, building the
   "Swedavia Flight API" to us.
   * Details
@@ -307,9 +308,9 @@ structures:
   our code. Fortunately, the API is still valid and it worked!
 
 * My third "git commit" was:
-  * "Complete Part 2: Start of work (Implementation / Execution)"
+  * "Complete Part 2: Start of work (implementation/execution)"
 
-## Part 3: Completion of work (Finalization & improvement)
+## Part 3: Completion of work (finalization & improvement)
 * We removed all excessive files Gemini created to "Swedavia Fli
   ght API".
 
@@ -351,6 +352,39 @@ structures:
   finish off this project today.
 
 * My fourth "git commit" was:
-  * "Complete Part 3: Completion of work (Finalization & improvement)"
+  * "Complete Part 3: Completion of work (finalization & improvement)"
 
-## Part 4 - Conclusion
+## Part 4: Conclusion
+
+### Questions 
+### What did you achieve?
+* Full documentation of the work we did in this logbook.md file.
+* We almost achieved cloning the original "Swedavia Flight API" from the
+  "Buster Swedavia FlightInfo API v2 .mov" video, using reverse
+  engineering.
+* Some screenshots of the app we created.
+
+### What did you learn?
+* I learned what "reverse engineering" is and how it is used.
+* I learned more about working in a group.
+* I learned more about Gemini GenAI from "Google AI Studio" and how to
+  work with GenAI.
+* I learned more about how to setup up an input prompt to Gemini GenAI.
+* I learned more about how to document my work.
+* I learned more about testing an app.
+
+### What could you improve?
+* If https://apideveloper.swedavia.se/ was not performing a
+  maintenance, we could had obtained our own API Key.
+* We could have resolved "Problem 4". However, we did not try to find
+  the solutions because we needed to finish off this project today.
+* We could had made further testing of the menu options of the app.
+* We could have provided a html interface, hosted via AWS. The app
+  would had looked better and become user friendly. Also, the user,
+  would not need to setup anything, before running the app. All that
+  would be needed, is to visit the website and use the app.
+
+### End of questions
+
+* My fifth "git commit" was:
+  * "Completed part 4: Conclusion"
